@@ -45,6 +45,15 @@ Advanced code snippets management with smart organization, tagging, and security
 
 ## 🛠️ Installation
 
+### From VSIX File (Recommended)
+
+1. **Download VSIX**: Download `blockmate-snippets-0.0.6.vsix` from [Releases](https://github.com/code-town3/blockmate-snippets/releases)
+2. **Open VS Code**
+3. **Go to Extensions** (`Ctrl+Shift+X`)
+4. **Click "..." menu** and select "Install from VSIX..."
+5. **Select the downloaded .vsix file**
+6. **Restart VS Code**
+
 ### From VS Code Marketplace
 
 1. Open VS Code
@@ -55,6 +64,8 @@ Advanced code snippets management with smart organization, tagging, and security
 ### From Source
 
 ```bash
+git clone https://github.com/code-town3/blockmate-snippets.git
+cd blockmate-snippets
 npm install
 npm run compile
 npx vsce package
