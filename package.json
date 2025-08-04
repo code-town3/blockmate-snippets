@@ -1,0 +1,138 @@
+{
+  "name": "blockmate-snippets",
+  "displayName": "BlockMate Snippets",
+  "description": "Advanced code snippets management with smart organization and tagging",
+  "version": "0.0.6",
+  "publisher": "Lielisk",
+  "icon": "image/blockmate-logo.png",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets",
+    "Formatters",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:blockmate.saveSnippet",
+    "onCommand:blockmate.manageSnippets",
+    "onCommand:blockmate.insertSnippet",
+    "onCommand:blockmate.deleteSnippet"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "blockmate.saveSnippet",
+        "title": "Save as Code Snippet",
+        "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.manageSnippets",
+        "title": "Manage Snippets",
+        "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.insertSnippet",
+        "title": "Insert Snippet",
+        "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.deleteSnippet",
+        "title": "Delete Snippet",
+        "category": "BlockMate"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "blockmate.saveSnippet",
+          "group": "1_modification",
+          "when": "editorHasSelection"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "blockmate.saveSnippet",
+        "key": "ctrl+shift+s",
+        "mac": "cmd+shift+s",
+        "when": "editorHasSelection"
+      },
+      {
+        "command": "blockmate.manageSnippets",
+        "key": "ctrl+shift+m",
+        "mac": "cmd+shift+m"
+      },
+      {
+        "command": "blockmate.insertSnippet",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+shift+i"
+      }
+    ],
+    "configuration": {
+      "title": "BlockMate Snippets",
+      "properties": {
+        "blockmate.snippets.storagePath": {
+          "type": "string",
+          "default": "",
+          "description": "Custom path for storing snippets (empty for default)"
+        },
+        "blockmate.snippets.autoBackup": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically backup snippets"
+        },
+        "blockmate.snippets.maxSnippets": {
+          "type": "number",
+          "default": 1000,
+          "description": "Maximum number of snippets to store"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/uuid": "^10.0.0",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "^8.26.0",
+    "typescript": "^4.8.4",
+    "@vscode/test-electron": "^2.3.8",
+    "mocha": "^10.2.0",
+    "glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/glob": "^8.1.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "extensionId": "blockmate-snippets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blockmate/blockmate-snippets.git"
+  },
+  "keywords": [
+    "snippets",
+    "code",
+    "productivity",
+    "templates",
+    "organization"
+  ],
+  "files": [
+    "out/**/*",
+    "image/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT"
+}
