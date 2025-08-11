@@ -1,8 +1,8 @@
 {
   "name": "blockmate-snippets",
   "displayName": "BlockMate Snippets",
-  "description": "Advanced code snippets management with smart organization and tagging",
-  "version": "0.0.6",
+  "description": "Advanced code snippets management with smart organization, tagging, and enterprise-grade security features. Includes XSS protection, input validation, and secure storage.",
+  "version": "0.0.18",
   "publisher": "Lielisk",
   "icon": "image/blockmate-logo.png",
   "engines": {
@@ -14,10 +14,21 @@
     "Other"
   ],
   "activationEvents": [
+    "onStartupFinished",
     "onCommand:blockmate.saveSnippet",
     "onCommand:blockmate.manageSnippets",
     "onCommand:blockmate.insertSnippet",
-    "onCommand:blockmate.deleteSnippet"
+    "onCommand:blockmate.deleteSnippet",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:html",
+    "onLanguage:css",
+    "onLanguage:json",
+    "onLanguage:python",
+    "onLanguage:java",
+    "onLanguage:csharp",
+    "onLanguage:cpp",
+    "onLanguage:c"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -41,6 +52,36 @@
         "command": "blockmate.deleteSnippet",
         "title": "Delete Snippet",
         "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.manageEncryption",
+        "title": "Manage Encryption",
+        "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.managePinProtection",
+        "title": "Manage PIN Protection",
+        "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.manageFolders",
+        "title": "Manage Folders",
+        "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.testAudit",
+        "title": "Test Audit Logging",
+        "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.securityTest",
+        "title": "Security Test Suite",
+        "category": "BlockMate"
+      },
+      {
+        "command": "blockmate.quickCreateSnippet",
+        "title": "Quick Create Snippet",
+        "category": "BlockMate"
       }
     ],
     "menus": {
@@ -49,6 +90,25 @@
           "command": "blockmate.saveSnippet",
           "group": "1_modification",
           "when": "editorHasSelection"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "blockmate-sidebar",
+          "title": "BlockMate Snippets",
+          "icon": "image/blockmate-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "blockmate-sidebar": [
+        {
+          "type": "webview",
+          "id": "blockmate.folderPreview",
+          "name": "Folder Preview",
+          "when": "true"
         }
       ]
     },
@@ -68,6 +128,12 @@
         "command": "blockmate.insertSnippet",
         "key": "ctrl+shift+i",
         "mac": "cmd+shift+i"
+      },
+      {
+        "command": "blockmate.quickCreateSnippet",
+        "key": "ctrl+shift+q",
+        "mac": "cmd+shift+q",
+        "when": "editorHasSelection"
       }
     ],
     "configuration": {
@@ -87,6 +153,51 @@
           "type": "number",
           "default": 1000,
           "description": "Maximum number of snippets to store"
+        },
+        "blockmate.snippets.enableEncryption": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable AES-256 encryption for snippet data"
+        },
+        "blockmate.snippets.encryptionKey": {
+          "type": "string",
+          "default": "",
+          "description": "Encryption key for snippet data (auto-generated)"
+        },
+        "blockmate.snippets.enablePinProtection": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable PIN protection for snippet access"
+        },
+        "blockmate.snippets.pinHash": {
+          "type": "string",
+          "default": "",
+          "description": "Hashed PIN for access control"
+        },
+        "blockmate.snippets.emergencyCodeHash": {
+          "type": "string",
+          "default": "",
+          "description": "Hashed emergency code for PIN recovery"
+        },
+        "blockmate.snippets.securityQuestions": {
+          "type": "object",
+          "default": null,
+          "description": "Security questions for PIN recovery"
+        },
+        "blockmate.snippets.attemptCount": {
+          "type": "number",
+          "default": 0,
+          "description": "Failed PIN attempt count"
+        },
+        "blockmate.snippets.lockoutTime": {
+          "type": "number",
+          "default": 0,
+          "description": "Account lockout time"
+        },
+        "blockmate.folders": {
+          "type": "string",
+          "default": "",
+          "description": "Folder configuration data (JSON string)"
         }
       }
     }
@@ -100,23 +211,24 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
     "@types/uuid": "^10.0.0",
     "@types/vscode": "^1.74.0",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
-    "eslint": "^8.26.0",
-    "typescript": "^4.8.4",
     "@vscode/test-electron": "^2.3.8",
-    "mocha": "^10.2.0",
+    "eslint": "^8.26.0",
     "glob": "^8.1.0",
-    "@types/mocha": "^10.0.1",
-    "@types/glob": "^8.1.0"
+    "mocha": "^10.2.0",
+    "typescript": "^4.8.4"
   },
   "dependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "crypto-js": "^4.2.0",
     "uuid": "^9.0.0"
   },
-  "extensionId": "blockmate-snippets",
   "repository": {
     "type": "git",
     "url": "https://github.com/blockmate/blockmate-snippets.git"
@@ -132,7 +244,22 @@
     "out/**/*",
     "image/**/*",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "package.json"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blockmate/blockmate-snippets/issues"
+  },
+  "homepage": "https://github.com/blockmate/blockmate-snippets#readme",
+  "author": {
+    "name": "Lielisk",
+    "email": "support@lielisk.com"
+  },
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true,
+      "description": "This extension can be used in untrusted workspaces"
+    }
+  }
 }
