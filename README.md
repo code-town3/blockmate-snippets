@@ -39,6 +39,15 @@ Advanced code snippets management with smart organization, tagging, and security
 - **Responsive Design**: Works on all screen sizes
 - **Hover Effects**: Interactive UI elements with smooth animations
 
+### 🔗 Snippet Sharing & Links
+
+- **🔗 Share Links**: Create shareable links for individual snippets
+- **📋 One-Click Copy**: Copy share links to clipboard instantly
+- **🔑 Secure Tokens**: Unique tokens for each shared snippet
+- **📊 Link Management**: View, manage, and delete all your share links
+- **📅 Creation Tracking**: Track when each link was created
+- **💡 Link Information**: Detailed view of link properties and usage
+
 ### 📁 Smart Folder Organization
 
 - **📂 Folder System**: Organize snippets into custom folders by project, language, or purpose
@@ -237,6 +246,240 @@ npx vsce package
 - Track how many snippets are in each folder
 - Monitor usage patterns per folder
 - Identify which folders need more organization
+
+### 🔗 Managing Share Links
+
+1. **Create Share Link**:
+
+   - **Method 1**: Select code → Right-click → "Create Share Link"
+   - **Method 2**: `Ctrl+Shift+L` → Select snippet → Create link
+   - **Method 3**: Command Palette → "BlockMate: Create Share Link"
+
+2. **Available Actions**:
+
+   - **🔗 Create Link**: Generate unique share link for any snippet
+   - **📋 Copy Link**: One-click copy to clipboard
+   - **🗑️ Delete Link**: Remove share link permanently
+   - **📊 Link Info**: View detailed link information and properties
+
+3. **Link Management**:
+
+   - **View All Links**: `Ctrl+Shift+K` or "BlockMate: Manage Share Links"
+   - **Link Properties**: See creation date, snippet name, and description
+   - **Secure Tokens**: Each link has a unique, secure token
+   - **Link Format**: `blockmate://snippet/{token}`
+
+### 📥 Opening Shared Snippets
+
+1. **Open Shared Snippet**:
+
+   - **Method 1**: Click on a shared snippet link
+   - **Method 2**: Command Palette → "BlockMate: Open Shared Snippet from URL"
+   - **Method 3**: Paste the link in the input dialog
+
+2. **Available Actions When Opening**:
+
+   - **📊 View Details**: See snippet information and code preview
+   - **🔗 Create New Link**: Create a new share link for this snippet
+   - **💾 Save as File**: Save the snippet to your local file system
+
+3. **Manual File Saving**:
+
+   When you choose "💾 Save as File", the extension will:
+
+   - Open a save dialog with the correct file extension
+   - Suggest a filename based on the snippet name
+   - Allow you to choose the save location
+   - Automatically open the saved file in VS Code
+
+   **💡 Tip**: The extension automatically detects the correct file extension based on the snippet's language. For example:
+
+   - JavaScript snippets → `.js` files
+   - TypeScript snippets → `.ts` files
+   - Python snippets → `.py` files
+   - HTML snippets → `.html` files
+   - CSS snippets → `.css` files
+
+### 🔄 Cross-Machine Snippet Sharing
+
+BlockMate Snippets supports sharing snippets between different computers through a secure export/import system. This allows you to transfer both snippet data and share links across machines.
+
+#### **Phase 1: Source Computer (Export)**
+
+##### **Step 1: Update Extension**
+
+```
+1. Ctrl+Shift+P → "Extensions: Install from VSIX..."
+2. Select blockmate-snippets-0.0.25.vsix
+3. ✅ Install and restart VS Code
+```
+
+##### **Step 2: Verify Current Status**
+
+```
+1. Ctrl+Shift+P → "BlockMate: Test Link Status"
+   → Expected: "1 links found" (existing link)
+2. Ctrl+Shift+P → "BlockMate: Manage Snippets"
+   → Verify your test snippet is visible
+```
+
+##### **Step 3: Export Complete Data**
+
+```
+1. Ctrl+Shift+P → "BlockMate: Export Link Data"
+2. Expected message: "✅ Exported 1 links and 1 snippets to clipboard!"
+3. This confirms both link and snippet data were copied
+```
+
+##### **Step 4: Send Data via Email**
+
+```
+1. Ctrl+V to paste clipboard content (into any text editor)
+2. You'll see JSON format data:
+   {
+     "version": "1.0",
+     "exportedAt": "...",
+     "links": [...],
+     "snippets": [...]
+   }
+3. Send this JSON data via email to the target computer
+```
+
+#### **Phase 2: Target Computer (Import + Test)**
+
+##### **Step 1: Update Extension**
+
+```
+1. Ctrl+Shift+P → "Extensions: Install from VSIX..."
+2. Select blockmate-snippets-0.0.25.vsix
+3. ✅ Install and restart VS Code
+```
+
+##### **Step 2: Verify Clean State**
+
+```
+1. Ctrl+Shift+P → "BlockMate: Test Link Status"
+   → Expected: "0 links found"
+2. Ctrl+Shift+P → "BlockMate: Manage Snippets"
+   → Expected: "No snippets found"
+```
+
+##### **Step 3: Import Complete Data**
+
+```
+1. Copy JSON data from email
+2. Ctrl+Shift+P → "BlockMate: Import Link Data"
+3. Expected message: "✅ Successfully imported 1 links and 1 snippets!"
+```
+
+##### **Step 4: Verify Import Success**
+
+```
+1. Ctrl+Shift+P → "BlockMate: Test Link Status"
+   → Expected: "1 links found"
+2. Ctrl+Shift+P → "BlockMate: Manage Snippets"
+   → Your test snippet should be visible
+3. Ctrl+Shift+P → "BlockMate: Manage Links"
+   → Your test link should be visible
+```
+
+##### **Step 5: Test Shared Link**
+
+```
+1. Ctrl+Shift+P → "BlockMate: Open Shared Snippet"
+2. Paste the copied URL:
+   blockmate://snippet/[TOKEN]
+3. Press Enter
+```
+
+##### **Step 6: Verify Results**
+
+```
+1. "Shared Snippet Preview" panel should open
+2. Snippet content should be visible
+3. "📝 Open in Editor" button should work
+4. Snippet should open in editor
+```
+
+#### **Expected Test Results**
+
+##### **✅ Successful Scenario:**
+
+```
+🔍 Test Report:
+✅ Source Computer:
+  - Extension updated: Yes
+  - Export: "1 links and 1 snippets to clipboard!"
+  - JSON data: Sent via email
+
+✅ Target Computer:
+  - Extension updated: Yes
+  - Clean state check: "0 links found"
+  - Import: "1 links and 1 snippets!"
+  - Test check: "1 links found"
+  - Snippet check: "Test Snippet" found
+  - Link opening: ✅ Successful
+  - Preview panel: ✅ Opened
+  - Snippet content: ✅ Displayed
+  - Editor opening: ✅ Working
+```
+
+##### **❌ Failed Scenario:**
+
+```
+❌ Errors:
+- Import error: "❌ Invalid link data format"
+- Link opening error: "❌ Snippet not found"
+- Preview panel didn't open
+- Console errors: [Share details]
+```
+
+#### **Critical Checkpoints**
+
+##### **During Export:**
+
+- ✅ "1 links and 1 snippets" message
+- ✅ JSON contains both `links` and `snippets` arrays
+
+##### **During Import:**
+
+- ✅ "1 links and 1 snippets" message
+- ✅ Test Link Status: "1 links found"
+- ✅ Manage Snippets: Snippet visible
+
+##### **During Link Opening:**
+
+- ✅ Preview panel opens
+- ✅ Snippet content visible
+- ✅ "Open in Editor" works
+
+#### **Troubleshooting**
+
+**If Import Fails:**
+
+1. Verify JSON data is complete (contains both `links` and `snippets`)
+2. Check VS Code console for error messages
+3. Ensure extension version matches on both computers
+
+**If Link Opening Fails:**
+
+1. Verify link token is correct
+2. Check "Test Link Status" shows the link
+3. Ensure snippet exists in "Manage Snippets"
+
+**If Preview Panel Doesn't Open:**
+
+1. Check VS Code console for webview errors
+2. Restart VS Code and try again
+3. Verify extension is properly installed
+
+#### **Security Notes**
+
+- **Local Storage**: All data is stored locally on each machine
+- **No Cloud Sync**: Data transfer requires manual export/import
+- **Secure Tokens**: Each share link has a unique, secure token
+- **Expiration Support**: Links can have expiration dates for security
+- **Usage Tracking**: Link usage is tracked per machine
 
 ### 🔐 Managing Encryption
 
@@ -584,6 +827,20 @@ The test will:
 ├── 🗂️ Redis (5 snippets)
 └── 🗂️ Database Utils (8 snippets)
 ```
+
+## ⌨️ Keyboard Shortcuts
+
+| Command                  | Windows/Linux  | Mac           | Description                                 |
+| ------------------------ | -------------- | ------------- | ------------------------------------------- |
+| **Save Snippet**         | `Ctrl+Shift+S` | `Cmd+Shift+S` | Save selected code as snippet               |
+| **Manage Snippets**      | `Ctrl+Shift+M` | `Cmd+Shift+M` | Open snippet management interface           |
+| **Insert Snippet**       | `Ctrl+Shift+I` | `Cmd+Shift+I` | Insert existing snippets                    |
+| **Quick Create Snippet** | `Ctrl+Shift+Q` | `Cmd+Shift+Q` | Fast snippet creation with folder selection |
+| **Show Version History** | `Ctrl+Shift+V` | `Cmd+Shift+V` | View snippet version history                |
+| **Compare Versions**     | `Ctrl+Shift+D` | `Cmd+Shift+D` | Compare different snippet versions          |
+| **Restore Version**      | `Ctrl+Shift+R` | `Cmd+Shift+R` | Restore previous snippet version            |
+| **Create Share Link**    | `Ctrl+Shift+L` | `Cmd+Shift+L` | Create shareable link for snippet           |
+| **Manage Share Links**   | `Ctrl+Shift+K` | `Cmd+Shift+K` | Manage all share links                      |
 
 ## 📞 Support
 
