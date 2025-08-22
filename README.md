@@ -2,6 +2,99 @@
 
 Advanced code snippets management with smart organization, tagging, and security features for Visual Studio Code.
 
+## 🚀 **Quick Start Guide**
+
+### **📋 Essential Commands:**
+
+- **`Ctrl+Shift+S`** - Save selected code as snippet
+- **`Ctrl+Shift+M`** - Open modern snippet management interface
+- **`Ctrl+Shift+Q`** - Quick snippet creation with folder selection
+- **`Ctrl+Shift+I`** - Insert existing snippets
+
+### **🎯 Key Features:**
+
+- **📁 Smart Folder Organization** - Automatic categorization by file type
+- **🔍 Real-time Search** - Instant search across all snippets
+- **🏷️ Tag System** - Organize snippets with custom tags
+- **🛡️ AES-256 Encryption** - Enterprise-grade security
+- **📊 Modern UI** - Beautiful dark/light theme with smooth animations
+- **📈 Usage Analytics** - Track snippet usage with detailed statistics
+- **🔗 Share Links** - Create shareable links for snippets
+
+### **💡 Pro Tips:**
+
+- **Auto-Assignment**: Snippets automatically assigned to appropriate folders
+- **Modern Interface**: Glassmorphism design with hover effects
+- **Performance**: Optimized for large snippet collections
+- **Security**: Built-in encryption and audit logging
+
+## 🛡️ SECURITY NOTICE
+
+**IMPORTANT: This extension contains advanced security testing and monitoring features. Please read this section carefully before use.**
+
+### 🚨 **CRITICAL SECURITY NOTICE:**
+
+This extension provides advanced security features including:
+
+✅ **AES-256 Encryption** - Enterprise-grade security for your snippets
+✅ **PIN Protection** - Secure access control
+✅ **Audit Logging** - Comprehensive security event tracking and monitoring
+✅ **Rate Limiting** - Prevent abuse and ensure system stability
+✅ **CSP Testing** - Content Security Policy testing and validation
+✅ **JWT Authentication** - Token-based authentication with session management
+✅ **Security Headers Testing** - Advanced security headers analysis
+
+### 🎯 **LEVEL-BASED SECURITY SYSTEM:**
+
+This extension uses a sophisticated level-based security system:
+
+- **🟢 Level 1 (Basic)**: Core snippet management features
+- **🟡 Level 2 (Advanced)**: Security features like audit logging, rate limiting, CSP testing (requires 20 snippets + 7 days usage)
+
+### ⚠️ **USER RESPONSIBILITY:**
+
+By using this extension, you acknowledge that:
+
+- **You will only use security features for legitimate testing purposes**
+- **You are responsible for all your actions and their consequences**
+- **You will protect your encryption keys, PIN, and authentication tokens**
+- **You will use security testing features only on systems you own or have explicit permission to test**
+- **You will comply with all applicable laws and regulations**
+- **You will not use these features for malicious purposes or unauthorized access**
+
+### 🛡️ Security Notice
+
+- **Data Protection**: Ensure your snippets, encryption keys, and security logs are stored securely
+- **Professional Use**: Recommended for developers, security professionals, and authorized testers
+- **Compliance**: Ensure usage complies with your organization's security policies and applicable regulations
+- **Testing Environment**: Use security testing features in controlled, authorized environments only
+
+### 📋 **ACCEPTABLE USE CASES:**
+
+✅ **Authorized Security Testing** - Testing your own systems or systems you have permission to test
+✅ **Educational Security Research** - Learning about security concepts and practices
+✅ **Development Security Assessment** - Assessing security of your own applications
+✅ **Compliance Testing** - Testing for regulatory compliance requirements
+✅ **Security Training** - Educational purposes in controlled environments
+
+❌ **Unauthorized System Access** - Testing systems without permission
+❌ **Malicious Attacks** - Using features for harmful purposes
+❌ **Illegal Activities** - Any use that violates laws or regulations
+❌ **Unauthorized Penetration Testing** - Testing systems you don't own or have permission to test
+
+### 📜 **TERMS OF USE:**
+
+1. **Legal and authorized use only**
+2. **Protect your data and credentials**
+3. **Use security features responsibly and ethically**
+4. **Test only systems you own or have permission to test**
+5. **Comply with all applicable laws and regulations**
+6. **Accept full legal responsibility for your actions**
+
+**By using this extension, you acknowledge that you have read, understood, and agree to these terms. Misuse may result in legal consequences.**
+
+---
+
 ## 🚀 Features
 
 ### ✨ Smart Snippet Management
@@ -9,8 +102,9 @@ Advanced code snippets management with smart organization, tagging, and security
 - **Easy Creation**: Select code and save as snippet with `Ctrl+Shift+S`
 - **Smart Organization**: Tag and categorize snippets for easy discovery
 - **File Type Support**: Specify which file types each snippet works with
-- **Usage Tracking**: Monitor how often snippets are used
+- **Usage Tracking**: Monitor how often snippets are used with detailed analytics
 - **Favorites System**: Mark and organize your most-used snippets
+- **🔍 Automatic Folder Assignment**: Snippets automatically assigned to appropriate folders based on file type
 
 ### 🔍 Advanced Search & Filtering
 
@@ -27,17 +121,54 @@ Advanced code snippets management with smart organization, tagging, and security
 - **Path Traversal Protection**: Secure file path validation
 - **Input Validation**: Length limits and dangerous pattern detection
 - **Content Security Policy**: CSP headers for webview protection
-- **Rate Limiting**: Prevents abuse of extension features
+- **Rate Limiting**: Prevents abuse of extension features with configurable limits
 - **Secure Key Management**: Automatic encryption key generation and storage
 - **🔍 Audit Logging**: Comprehensive security event tracking and monitoring
+- **🔐 JWT Authentication System**: Local token-based authentication with session management
+- **🔄 Encryption Key Rotation**: Automatic encryption key rotation for enhanced security
+- **📊 Audit Trail System**: Comprehensive logging of all security events and user actions
+- **🛡️ Security Headers Optimization**: Advanced security headers management for webviews
+
+### 🔐 **Level-Based Security System**
+
+BlockMate Snippets uses a sophisticated level-based security system to gradually unlock advanced features:
+
+#### **🟢 Level 1 (Basic) - Available Immediately**
+
+- **Core Snippet Management**: Create, edit, delete, and organize snippets
+- **Folder Management**: Create and manage snippet folders
+- **Basic Encryption**: AES-256 encryption for snippet data
+- **PIN Protection**: Optional PIN-based access control
+- **Snippet Sharing**: Create and manage share links
+- **Usage Analytics**: Track snippet usage with detailed statistics
+
+#### **🟡 Level 2 (Advanced) - Requires 20 Snippets + 7 Days Usage**
+
+- **Audit Logging**: Comprehensive security event tracking
+- **Rate Limiting**: Advanced rate limiting and abuse prevention
+- **CSP Testing**: Content Security Policy testing tools
+- **JWT Authentication**: Token-based authentication system
+- **Advanced Encryption**: Enhanced encryption features
+- **Security Headers Testing**: Advanced security headers analysis
+
+#### **🎯 How to Upgrade Levels**
+
+1. **Start with Level 1**: All basic features are available immediately
+2. **Create Snippets**: Each snippet brings you closer to Level 2
+3. **Use the Extension**: Regular usage builds your experience
+4. **Check Progress**: Use "BlockMate: Upgrade Level" command to see requirements
+5. **Upgrade Automatically**: Meet requirements to unlock advanced features
 
 ### 📊 Modern Management Interface
 
-- **Dark Theme UI**: Modern, eye-friendly interface
-- **Real-time Statistics**: Live usage and storage statistics
+- **Dark/Light Theme UI**: Modern, eye-friendly interface with theme switching
+- **Real-time Statistics**: Live usage and storage statistics with detailed analytics
 - **Export/Import**: Backup and share your snippet collections
 - **Responsive Design**: Works on all screen sizes
 - **Hover Effects**: Interactive UI elements with smooth animations
+- **✏️ Edit & Delete Actions**: Inline edit and delete buttons for each snippet
+- **🔄 Real-time Updates**: Instant UI updates after edit/delete operations
+- **✅ Confirmation Dialogs**: Safe delete operations with user confirmation
 
 ### 🔗 Snippet Sharing & Links
 
@@ -45,8 +176,6 @@ Advanced code snippets management with smart organization, tagging, and security
 - **📋 One-Click Copy**: Copy share links to clipboard instantly
 - **🔑 Secure Tokens**: Unique tokens for each shared snippet
 - **📊 Link Management**: View, manage, and delete all your share links
-- **📅 Creation Tracking**: Track when each link was created
-- **💡 Link Information**: Detailed view of link properties and usage
 
 ### 📁 Smart Folder Organization
 
@@ -55,19 +184,205 @@ Advanced code snippets management with smart organization, tagging, and security
 - **🔄 Quick Access**: Click folders to manage snippets, add new ones, or view contents
 - **🏷️ Smart Categorization**: Automatically suggest folders based on snippet content
 - **📊 Folder Statistics**: Track snippet counts and usage per folder
+- **🌳 Hierarchical Nested Structure**: Create unlimited nested folder levels with visual hierarchy
+- **📁 Automatic Assignment**: Snippets automatically assigned to appropriate folders based on file type
 
-### ⚡ Auto-Completion
+#### 🌳 **Multi-Level Nested Folder System**
 
-- **Intelligent Suggestions**: Get snippet suggestions as you type
-- **Usage-based Sorting**: Most used snippets appear first
-- **Rich Documentation**: See snippet details and tags in suggestions
-- **Multi-language Support**: Works with all programming languages
+BlockMate Snippets supports unlimited nested folder levels with a modern tree structure:
+
+**🎯 Key Features:**
+
+- **Unlimited Depth**: Create folders within folders with no level restrictions
+- **Visual Hierarchy**: Clear indentation and visual indicators for each level
+- **Smart Context Menu**: Right-click any folder for quick actions
+- **Expand/Collapse**: Click to expand or collapse nested folders
+
+**🖱️ Interaction Methods:**
+
+- **Left Click**: View snippets in folder or expand/collapse nested folders
+- **Right Click**: Open context menu with folder-specific actions
+- **Context Menu Actions**:
+  - 📁 **Create Subfolder**: Add nested folder at any level
+  - ✏️ **Edit Folder**: Modify folder name, icon, or color
+  - 🗑️ **Delete Folder**: Remove folder (snippets moved to parent)
+  - 📝 **View Snippets**: Browse snippets in this folder
+
+**📊 Example Nested Structure:**
+
+```
+📁 Frontend Development
+├── 📁 React Components
+│   ├── 📁 UI Components
+│   │   ├── 📁 Buttons
+│   │   ├── 📁 Forms
+│   │   └── 📁 Navigation
+│   ├── 📁 Hooks
+│   └── 📁 Utilities
+├── 📁 CSS/Styling
+│   ├── 📁 Animations
+│   └── 📁 Layout
+└── 📁 JavaScript Utils
+    ├── 📁 Array Methods
+    └── 📁 Date Handling
+```
+
+### 📈 Usage Analytics
+
+BlockMate Snippets includes comprehensive usage analytics to help you understand how your snippets are being used and optimize your workflow.
+
+#### **📊 Real-time Statistics Dashboard**
+
+- **📈 Total Usage**: Track overall snippet copy count across all snippets
+- **📅 Daily Usage**: Monitor today's snippet usage with automatic daily reset
+- **📊 Weekly Usage**: Track this week's usage with automatic weekly reset
+- **📈 Monthly Usage**: Monitor this month's usage with automatic monthly reset
+- **🎯 Individual Snippet Stats**: Each snippet shows its own usage statistics
+
+#### **📋 Detailed Usage Tracking**
+
+- **📊 Copy Count**: Track how many times each snippet has been copied
+- **🕒 Last Used**: See when each snippet was last used with timestamp
+- **📅 Created Date**: Track when snippets were created
+- **📈 Usage History**: Complete history of all snippet interactions
+- **🎯 Context Tracking**: Record usage context including file types
+
+#### **📊 Usage Analytics Features**
+
+- **🔄 Automatic Updates**: Statistics update in real-time when snippets are copied
+- **📈 Usage Trends**: Monitor snippet popularity and usage patterns over time
+- **🎯 Performance Insights**: Identify your most-used and least-used snippets
+- **📊 Visual Dashboard**: Modern statistics cards with live updates
+- **🕒 Time-based Analysis**: View usage data with timestamps and context
+
+#### **🎯 How Usage Analytics Works**
+
+1. **Copy Tracking**: Every time you copy a snippet, usage statistics are automatically updated
+2. **Real-time Updates**: Statistics refresh immediately in the management interface
+3. **Automatic Reset**: Daily, weekly, and monthly counters reset automatically
+4. **Historical Data**: Complete usage history is maintained for analysis
+5. **Context Recording**: Usage context including file types is recorded for insights
+
+### 🚀 Performance & Optimization
+
+- **⚡ Dynamic Performance Algorithm**: Automatically adapts to your system and data size
+- **📊 Performance Optimization**: Track and optimize extension performance
+- **🔄 Smart Caching**: Intelligent cache management based on data size
+- **📈 Performance Reports**: Detailed performance analysis and recommendations
+- **🧹 Storage Optimization**: Automatic storage cleanup and organization
+
+## 🎮 Commands Reference
+
+### 📋 Essential Commands
+
+| Command                  | Shortcut       | Description                                  | Category     |
+| ------------------------ | -------------- | -------------------------------------------- | ------------ |
+| **Save as Code Snippet** | `Ctrl+Shift+S` | Save selected code as a new snippet          | Core         |
+| **Manage Snippets**      | `Ctrl+Shift+M` | Open snippet management interface            | Core         |
+| **Insert Snippet**       | `Ctrl+Shift+I` | Insert snippet from quick pick               | Core         |
+| **Quick Create Snippet** | `Ctrl+Shift+Q` | Quick snippet creation with folder selection | Core         |
+| **Manage Folders**       | -              | Create and manage snippet folders            | Organization |
+| **Create Share Link**    | -              | Generate shareable link for snippet          | Sharing      |
+| **Manage Share Links**   | -              | View and manage all share links              | Sharing      |
+| **Upgrade Level**        | -              | Check and upgrade your security level        | Security     |
+
+### 🔧 Additional Commands
+
+**Security & Encryption:**
+
+- Manage Encryption, PIN Protection, JWT Authentication, Key Rotation, Audit Trail
+
+**Testing & Monitoring:**
+
+- Test Audit Logging, Security Test Suite, Rate Limiting Dashboard
+
+**Advanced Security:**
+
+- Audit Logging, Rate Limiting, CSP Testing, JWT Authentication
+
+_For complete list of commands, use Command Palette (`Ctrl+Shift+P`) and search "BlockMate"_
+
+### 🎯 Command Categories
+
+- **Core Commands**: Essential snippet management commands for daily use
+- **Organization Commands**: Folder management and snippet organization features
+- **Security Commands**: Encryption, PIN protection, security testing, and monitoring features
+- **Sharing Commands**: Snippet sharing, link management, and collaboration features
+- **Performance Commands**: Performance optimization and analytics features
+
+## 🚀 Recent Features
+
+### ✏️ Inline Edit & Delete Actions
+
+- **✏️ Edit Button**: Green edit button for each snippet with full editing capabilities
+- **🗑️ Delete Button**: Red delete button with safe confirmation dialog
+- **🔄 Real-time Updates**: Changes immediately reflected in the interface
+- **📁 Folder Selection**: Choose from all available folders or create new ones
+- **🏷️ Tag Management**: Add, remove, or modify tags with comma-separated input
+
+### 🎨 Enhanced Icon System
+
+- **Updated Technology Icons**: Modern, recognizable icons for React, Python, and other technologies
+- **Consistent Display**: Icons appear consistently across all interfaces
+- **SVG-Based**: Scalable vector graphics for crisp display at any size
+- **Color-Coded**: Each technology has its distinct color scheme for easy identification
+
+### 🔍 Enhanced Search Operators
+
+- **Clickable Operators**: Click search operators to add them to search input
+- **Smart Replacement**: Clicking an operator replaces existing operators of the same type
+- **Available Operators**: `tag:`, `type:`, `created:`, `title:`, `desc:`, `body:`, `has:`, `no:`
+
+### 📁 Improved Tab Management
+
+- **Individual Tab Titles**: Each folder shows its own name in tab titles
+- **Unique Panel Management**: Each folder opens in its own webview panel
+- **Better Navigation**: Easy identification of open folder tabs
+
+### 📁 Automatic Folder Assignment
+
+- **Silent Assignment**: Snippets automatically assigned to appropriate folders based on file type
+- **File Type Detection**: Automatic detection based on current file extension
+- **No User Interaction**: Works seamlessly in the background
+- **Instant Results**: Snippets appear in correct folders immediately
+
+### 🎨 UI/UX Optimizations
+
+- **Responsive Design**: Optimized for all screen sizes and devices
+- **Compact Button System**: Streamlined interface with smaller, efficient buttons
+- **Mobile Optimization**: Touch-friendly design for mobile devices
+- **Performance Improvements**: Faster loading and smoother interactions
+- **Theme Switching**: Dark and light theme support with automatic preference saving
+
+### ⚡ Dynamic Performance Algorithm
+
+- **Smart Batch Processing**: Automatically adjusts batch size based on snippet count
+- **Dynamic Cache Management**: Cache TTL adapts to data size (15s - 60s)
+- **Universal Compatibility**: Works optimally for all user types and system sizes
+
+### 📊 Usage Analytics Integration
+
+- **📈 Real-time Statistics**: Live usage tracking with daily, weekly, and monthly counts
+- **📋 Usage History**: Complete tracking of all snippet interactions with timestamps
+- **🎯 Performance Metrics**: Detailed analytics for snippet popularity and usage patterns
+- **📊 Context Tracking**: Record usage context including file types and timestamps
+- **🔄 Automatic Updates**: Statistics update immediately when snippets are copied
+- **📊 Visual Dashboard**: Modern statistics cards with live updates in management interface
+- **🕒 Time-based Analysis**: View usage trends and patterns over time
+- **📈 Usage Insights**: Identify most-used and least-used snippets for optimization
+
+### 🔗 Enhanced Sharing System
+
+- **URI Handler**: `blockmate://snippet/[encrypted-data]` format
+- **Cross-Platform**: Works on Windows, Mac, and Linux
+- **Automatic Import**: Click links to automatically import snippets
+- **Secure Tokens**: Unique, encrypted tokens for each share
 
 ## 🛠️ Installation
 
 ### From VSIX File (Recommended)
 
-1. **Download VSIX**: Download `blockmate-snippets-0.0.8.vsix` from [Releases](https://github.com/code-town3/blockmate-snippets/releases)
+1. **Download VSIX**: Download the latest `.vsix` file from [Releases](https://github.com/code-town3/blockmate-snippets/releases)
 2. **Open VS Code**
 3. **Go to Extensions** (`Ctrl+Shift+X`)
 4. **Click "..." menu** and select "Install from VSIX..."
@@ -132,6 +447,14 @@ npx vsce package
    - "View Snippets" - See all snippets in folder
    - "Add Snippet" - Quick add to this folder
 
+#### Step 5: Create Nested Folders (Advanced)
+
+1. **Right-click any folder** in the sidebar
+2. **Select "Create Subfolder"** from the context menu
+3. **Enter subfolder name**: e.g., "Components", "Hooks", "Utils"
+4. **Save the subfolder**
+5. **Expand/Collapse**: Click the folder to expand or collapse nested structure
+
 ### Creating Snippets
 
 #### Method 1: Standard Creation
@@ -148,7 +471,7 @@ npx vsce package
    - Specify file types (e.g., "js, jsx, ts, tsx")
    - **Select Folder**: Choose which folder to save the snippet in
 
-#### Method 2: Quick Create Snippet (Drag & Drop Style)
+#### Method 2: Quick Create Snippet
 
 1. **Select Code**: Highlight the code you want to save
 2. **Quick Create**: Use `Ctrl+Shift+Q` (Windows/Linux) / `Cmd+Shift+Q` (Mac)
@@ -161,18 +484,12 @@ npx vsce package
 
 ### Using Snippets
 
-#### Method 1: Auto-Completion
-
-- Start typing in any supported file type
-- VS Code will suggest your snippets
-- Select and insert the snippet
-
-#### Method 2: Quick Pick
+#### Method 1: Quick Pick
 
 - Use `Ctrl+Shift+I` to open snippet picker
 - Search and select from available snippets
 
-#### Method 3: Direct Prefix
+#### Method 2: Direct Prefix
 
 - Type the snippet prefix (e.g., "rfc")
 - Press `Tab` or `Enter` to insert
@@ -189,9 +506,12 @@ npx vsce package
    - **Tag Filtering**: Dropdown with all available tags
    - **File Type Filtering**: Filter by specific file types
    - **Favorites Tab**: Dedicated view for favorite snippets
-   - **Statistics**: Live usage and storage statistics
+   - **Statistics**: Live usage and storage statistics with detailed analytics
    - **Export/Import**: Backup and share collections
-   - **Copy to Clipboard**: One-click snippet copying
+   - **✏️ Edit Snippets**: Inline edit button for each snippet
+   - **🗑️ Delete Snippets**: Safe delete with confirmation dialog
+   - **⭐ Toggle Favorites**: Quick favorite/unfavorite actions
+   - **🎨 Theme Switching**: Toggle between dark and light themes
 
 ### 📁 Managing Folders
 
@@ -215,12 +535,12 @@ npx vsce package
 - Click "Create New Folder" in the folder manager
 - Enter folder name (e.g., "React Components", "Database Queries")
 - Add optional description
-- Choose folder color/icon (if available)
+- **🌳 Create Nested Folders**: Right-click any folder → "Create Subfolder"
 
 **🔄 Managing Existing Folders**:
 
 - **Rename**: Change folder name and description
-- **Delete**: Remove folder (snippets moved to "Uncategorized")
+- **Delete**: Remove folder (snippets moved to parent folder)
 - **Move Snippets**: Transfer snippets between folders
 - **View Statistics**: See snippet count and usage per folder
 
@@ -239,13 +559,6 @@ npx vsce package
 - **Project-based**: Create folders for each project (e.g., "E-commerce App", "Blog System")
 - **Language-based**: Organize by programming language (e.g., "JavaScript", "Python", "SQL")
 - **Function-based**: Group by purpose (e.g., "Authentication", "Database", "UI Components")
-- **Frequency-based**: Separate commonly used vs. specialized snippets
-
-**📈 Folder Statistics**:
-
-- Track how many snippets are in each folder
-- Monitor usage patterns per folder
-- Identify which folders need more organization
 
 ### 🔗 Managing Share Links
 
@@ -263,7 +576,6 @@ npx vsce package
    - **📊 Link Info**: View detailed link information and properties
 
 3. **Link Management**:
-
    - **View All Links**: `Ctrl+Shift+K` or "BlockMate: Manage Share Links"
    - **Link Properties**: See creation date, snippet name, and description
    - **Secure Tokens**: Each link has a unique, secure token
@@ -284,7 +596,6 @@ npx vsce package
    - **💾 Save as File**: Save the snippet to your local file system
 
 3. **Manual File Saving**:
-
    When you choose "💾 Save as File", the extension will:
 
    - Open a save dialog with the correct file extension
@@ -292,194 +603,7 @@ npx vsce package
    - Allow you to choose the save location
    - Automatically open the saved file in VS Code
 
-   **💡 Tip**: The extension automatically detects the correct file extension based on the snippet's language. For example:
-
-   - JavaScript snippets → `.js` files
-   - TypeScript snippets → `.ts` files
-   - Python snippets → `.py` files
-   - HTML snippets → `.html` files
-   - CSS snippets → `.css` files
-
-### 🔄 Cross-Machine Snippet Sharing
-
-BlockMate Snippets supports sharing snippets between different computers through a secure export/import system. This allows you to transfer both snippet data and share links across machines.
-
-#### **Phase 1: Source Computer (Export)**
-
-##### **Step 1: Update Extension**
-
-```
-1. Ctrl+Shift+P → "Extensions: Install from VSIX..."
-2. Select blockmate-snippets-0.0.25.vsix
-3. ✅ Install and restart VS Code
-```
-
-##### **Step 2: Verify Current Status**
-
-```
-1. Ctrl+Shift+P → "BlockMate: Test Link Status"
-   → Expected: "1 links found" (existing link)
-2. Ctrl+Shift+P → "BlockMate: Manage Snippets"
-   → Verify your test snippet is visible
-```
-
-##### **Step 3: Export Complete Data**
-
-```
-1. Ctrl+Shift+P → "BlockMate: Export Link Data"
-2. Expected message: "✅ Exported 1 links and 1 snippets to clipboard!"
-3. This confirms both link and snippet data were copied
-```
-
-##### **Step 4: Send Data via Email**
-
-```
-1. Ctrl+V to paste clipboard content (into any text editor)
-2. You'll see JSON format data:
-   {
-     "version": "1.0",
-     "exportedAt": "...",
-     "links": [...],
-     "snippets": [...]
-   }
-3. Send this JSON data via email to the target computer
-```
-
-#### **Phase 2: Target Computer (Import + Test)**
-
-##### **Step 1: Update Extension**
-
-```
-1. Ctrl+Shift+P → "Extensions: Install from VSIX..."
-2. Select blockmate-snippets-0.0.25.vsix
-3. ✅ Install and restart VS Code
-```
-
-##### **Step 2: Verify Clean State**
-
-```
-1. Ctrl+Shift+P → "BlockMate: Test Link Status"
-   → Expected: "0 links found"
-2. Ctrl+Shift+P → "BlockMate: Manage Snippets"
-   → Expected: "No snippets found"
-```
-
-##### **Step 3: Import Complete Data**
-
-```
-1. Copy JSON data from email
-2. Ctrl+Shift+P → "BlockMate: Import Link Data"
-3. Expected message: "✅ Successfully imported 1 links and 1 snippets!"
-```
-
-##### **Step 4: Verify Import Success**
-
-```
-1. Ctrl+Shift+P → "BlockMate: Test Link Status"
-   → Expected: "1 links found"
-2. Ctrl+Shift+P → "BlockMate: Manage Snippets"
-   → Your test snippet should be visible
-3. Ctrl+Shift+P → "BlockMate: Manage Links"
-   → Your test link should be visible
-```
-
-##### **Step 5: Test Shared Link**
-
-```
-1. Ctrl+Shift+P → "BlockMate: Open Shared Snippet"
-2. Paste the copied URL:
-   blockmate://snippet/[TOKEN]
-3. Press Enter
-```
-
-##### **Step 6: Verify Results**
-
-```
-1. "Shared Snippet Preview" panel should open
-2. Snippet content should be visible
-3. "📝 Open in Editor" button should work
-4. Snippet should open in editor
-```
-
-#### **Expected Test Results**
-
-##### **✅ Successful Scenario:**
-
-```
-🔍 Test Report:
-✅ Source Computer:
-  - Extension updated: Yes
-  - Export: "1 links and 1 snippets to clipboard!"
-  - JSON data: Sent via email
-
-✅ Target Computer:
-  - Extension updated: Yes
-  - Clean state check: "0 links found"
-  - Import: "1 links and 1 snippets!"
-  - Test check: "1 links found"
-  - Snippet check: "Test Snippet" found
-  - Link opening: ✅ Successful
-  - Preview panel: ✅ Opened
-  - Snippet content: ✅ Displayed
-  - Editor opening: ✅ Working
-```
-
-##### **❌ Failed Scenario:**
-
-```
-❌ Errors:
-- Import error: "❌ Invalid link data format"
-- Link opening error: "❌ Snippet not found"
-- Preview panel didn't open
-- Console errors: [Share details]
-```
-
-#### **Critical Checkpoints**
-
-##### **During Export:**
-
-- ✅ "1 links and 1 snippets" message
-- ✅ JSON contains both `links` and `snippets` arrays
-
-##### **During Import:**
-
-- ✅ "1 links and 1 snippets" message
-- ✅ Test Link Status: "1 links found"
-- ✅ Manage Snippets: Snippet visible
-
-##### **During Link Opening:**
-
-- ✅ Preview panel opens
-- ✅ Snippet content visible
-- ✅ "Open in Editor" works
-
-#### **Troubleshooting**
-
-**If Import Fails:**
-
-1. Verify JSON data is complete (contains both `links` and `snippets`)
-2. Check VS Code console for error messages
-3. Ensure extension version matches on both computers
-
-**If Link Opening Fails:**
-
-1. Verify link token is correct
-2. Check "Test Link Status" shows the link
-3. Ensure snippet exists in "Manage Snippets"
-
-**If Preview Panel Doesn't Open:**
-
-1. Check VS Code console for webview errors
-2. Restart VS Code and try again
-3. Verify extension is properly installed
-
-#### **Security Notes**
-
-- **Local Storage**: All data is stored locally on each machine
-- **No Cloud Sync**: Data transfer requires manual export/import
-- **Secure Tokens**: Each share link has a unique, secure token
-- **Expiration Support**: Links can have expiration dates for security
-- **Usage Tracking**: Link usage is tracked per machine
+   **💡 Tip**: The extension automatically detects the correct file extension based on the snippet's language (JavaScript → `.js`, TypeScript → `.ts`, Python → `.py`, etc.)
 
 ### 🔐 Managing Encryption
 
@@ -519,7 +643,7 @@ Add these to your VS Code settings:
 
 ### 🔐 Encryption Management
 
-BlockMate Snippets includes enterprise-grade AES-256 encryption for your snippet data. You can manage encryption settings through the VS Code command palette.
+BlockMate Snippets includes enterprise-grade AES-256 encryption for your snippet data.
 
 #### Enabling Encryption
 
@@ -527,15 +651,6 @@ BlockMate Snippets includes enterprise-grade AES-256 encryption for your snippet
 2. **Run Command**: "BlockMate: Manage Encryption"
 3. **Select**: "🔓 Enable Encryption"
 4. **Confirm**: Click "Yes" to enable AES-256 encryption
-
-#### Managing Encryption
-
-Available encryption commands:
-
-- **🔓 Enable Encryption**: Enable AES-256 encryption for all snippets
-- **🔒 Disable Encryption**: Disable encryption (snippets stored in plain text)
-- **🔑 Change Encryption Key**: Generate a new encryption key and re-encrypt all snippets
-- **📊 Encryption Status**: View current encryption status and key information
 
 #### Encryption Features
 
@@ -570,30 +685,6 @@ Default keybindings (can be customized):
 }
 ```
 
-### 📁 Folder Commands
-
-Available folder management commands:
-
-```json
-{
-  "command": "blockmate.manageFolders",
-  "title": "Manage Folders",
-  "category": "BlockMate"
-}
-```
-
-#### Encryption Commands
-
-Encryption commands are available through the command palette:
-
-```json
-{
-  "command": "blockmate.manageEncryption",
-  "title": "Manage Encryption",
-  "category": "BlockMate"
-}
-```
-
 ## 🔐 PIN Protection
 
 BlockMate Snippets includes optional PIN protection for enhanced security. **PIN protection is disabled by default** - you can enable it anytime through the command palette.
@@ -612,7 +703,6 @@ BlockMate Snippets includes optional PIN protection for enhanced security. **PIN
 
 - Simply use the extension normally - no PIN required
 - All snippet features work without any security prompts
-- PIN protection remains disabled until you choose to enable it
 
 **For users who want PIN protection:**
 
@@ -624,44 +714,12 @@ BlockMate Snippets includes optional PIN protection for enhanced security. **PIN
 
 ### 🔑 PIN Protection Features
 
-#### Available Commands
-
-- **🔐 Enable PIN Protection**: Set up PIN protection for snippets
-- **🔓 Disable PIN Protection**: Remove PIN protection (requires current PIN or emergency code)
-- **🔢 Change PIN**: Update your PIN (requires current PIN)
-- **🔑 Change Emergency Code**: Update emergency code (requires current PIN)
-- **📊 PIN Protection Status**: View current protection status
-
-#### Security Features
-
 - **PIN Verification**: 4-8 digit PIN for snippet access
 - **Emergency Code**: 8-12 digit backup code for PIN recovery
 - **Session Management**: 30-minute PIN sessions to avoid frequent prompts
 - **Lockout Protection**: Temporary lockout after multiple failed attempts
 - **Secure Storage**: PIN and emergency codes stored using VS Code's secure storage
 - **Forgot PIN Recovery**: Reset PIN using emergency code
-
-#### PIN Recovery Process
-
-If you forget your PIN:
-
-1. **Access Snippets**: Try to access snippets (will show PIN prompt)
-2. **Click "Forgot PIN?"**: When invalid PIN is entered
-3. **Enter Emergency Code**: Provide your emergency code
-4. **Set New PIN**: Create a new PIN and emergency code
-5. **Save New Emergency Code**: Note down the new emergency code
-
-### ⚙️ PIN Protection Commands
-
-PIN protection commands are available through the command palette:
-
-```json
-{
-  "command": "blockmate.managePinProtection",
-  "title": "Manage PIN Protection",
-  "category": "BlockMate"
-}
-```
 
 ## 🔒 Security Features
 
@@ -708,13 +766,6 @@ BlockMate Snippets includes comprehensive audit logging to track security events
 - **Security Events**: Encryption changes, rate limit violations, suspicious activity
 - **System Events**: Extension start/stop, configuration changes, errors
 
-#### **Severity Levels**
-
-- **LOW**: Normal operations (snippet access, successful PIN verification)
-- **MEDIUM**: Important changes (PIN changes, snippet deletion, encryption disable)
-- **HIGH**: Security concerns (PIN failures, account lockouts, rate limit violations)
-- **CRITICAL**: System errors and suspicious activity
-
 #### **Audit Features**
 
 - **Real-time Logging**: All events logged immediately with timestamps
@@ -724,27 +775,6 @@ BlockMate Snippets includes comprehensive audit logging to track security events
 - **Privacy Controls**: Clear audit logs when needed
 - **Automatic Cleanup**: Maintains last 10,000 events for performance
 
-#### **Security Monitoring**
-
-- **Suspicious Activity Detection**: Automatic flagging of high/critical events
-- **Console Alerts**: High-severity events logged to console with warnings
-- **User Tracking**: Track events by machine ID for multi-user environments
-- **Metadata Storage**: Additional context stored with each event
-
-#### **Audit Log Structure**
-
-Each audit event includes:
-
-- **Unique ID**: UUID for event identification
-- **Timestamp**: Precise date and time of event
-- **Event Type**: Categorized event classification
-- **User ID**: Machine identifier for user tracking
-- **Details**: Human-readable event description
-- **Severity**: Security level assessment
-- **Metadata**: Additional contextual information
-- **IP Address**: Client location (localhost for VS Code)
-- **User Agent**: Extension version information
-
 #### **🧪 Testing Audit Logging**
 
 You can test the audit logging functionality using the built-in test command:
@@ -753,22 +783,59 @@ You can test the audit logging functionality using the built-in test command:
 2. **Run Command**: "BlockMate: Test Audit Logging"
 3. **View Results**: Check the output channel for detailed test results
 
-The test will:
+### 🛡️ Content Security Policy (CSP)
 
-- Generate various test events (PIN attempts, snippet operations, security events)
-- Display real-time audit alerts for high/critical severity events
-- Show comprehensive statistics and event breakdown
-- Save test results for analysis
+BlockMate Snippets implements comprehensive Content Security Policy protection for all webview interfaces:
 
-**Test Command Available**:
+#### **CSP Security Features**
 
-```json
-{
-  "command": "blockmate.testAudit",
-  "title": "Test Audit Logging",
-  "category": "BlockMate"
-}
-```
+- **Webview Protection**: All webviews protected with strict CSP policies
+- **XSS Prevention**: Blocks malicious script execution and injection attacks
+- **Resource Control**: Restricts resource loading to trusted sources only
+- **Frame Protection**: Prevents clickjacking attacks with frame-ancestors directive
+- **Object Protection**: Blocks dangerous object types with object-src 'none'
+- **Form Protection**: Prevents CSRF attacks with form-action restrictions
+- **Base URI Protection**: Prevents base URI manipulation attacks
+- **HTTPS Enforcement**: Automatically upgrades insecure requests to HTTPS
+
+#### **🧪 Testing CSP Security**
+
+You can test the CSP implementation using built-in security commands:
+
+1. **Open Command Palette**: `Ctrl+Shift+P`
+2. **Run Command**: "BlockMate: CSP Security Test"
+3. **View Results**: Check the output channel for detailed CSP test results
+
+### 🚦 Rate Limiting System
+
+BlockMate Snippets includes a comprehensive rate limiting system to prevent abuse and ensure fair usage:
+
+#### **Rate Limiting Features**
+
+- **Operation Protection**: Prevents abuse of snippet and folder operations
+- **Configurable Limits**: Adjustable rate limits for different operation types
+- **Real-time Monitoring**: Live tracking of request rates and violations
+- **Automatic Reset**: Rate limits automatically reset after time windows
+- **User Feedback**: Clear notifications when rate limits are exceeded
+- **Dashboard Interface**: Visual rate limiting management and monitoring
+
+#### **Protected Operations**
+
+The rate limiting system protects the following operations:
+
+- **Folder Operations**: Create, edit, delete folders (5 requests per minute)
+- **Snippet Operations**: Create, edit, delete snippets (10 requests per minute)
+- **Search Operations**: Search queries (20 requests per minute)
+- **Security Operations**: Security feature operations (3 requests per minute)
+
+#### **🧪 Testing Rate Limiting**
+
+You can test the rate limiting system using built-in commands:
+
+1. **Open Command Palette**: `Ctrl+Shift+P`
+2. **Run Command**: "BlockMate: Rate Limiting Dashboard"
+3. **Use Test Buttons**: Click test buttons to simulate rate limit scenarios
+4. **View Results**: Monitor rate limit status and violations
 
 ## 🎯 Quick Reference Guide
 
@@ -781,6 +848,15 @@ The test will:
 | **Save Snippet**         | `Ctrl+Shift+S`                               | Standard snippet creation                   |
 | **Manage Snippets**      | `Ctrl+Shift+M`                               | Complete snippet management                 |
 | **Insert Snippet**       | `Ctrl+Shift+I`                               | Insert existing snippets                    |
+
+### 🛡️ Security Commands
+
+| Command                     | Shortcut                                              | Description                        |
+| --------------------------- | ----------------------------------------------------- | ---------------------------------- |
+| **CSP Security Test**       | `Ctrl+Shift+P` → "BlockMate: CSP Security Test"       | Test Content Security Policy       |
+| **Rate Limiting Dashboard** | `Ctrl+Shift+P` → "BlockMate: Rate Limiting Dashboard" | Rate limiting management interface |
+| **Test Rate Limit**         | `Ctrl+Shift+P` → "BlockMate: Test Rate Limit"         | Test rate limiting functionality   |
+| **Reset Rate Limits**       | `Ctrl+Shift+P` → "BlockMate: Reset Rate Limits"       | Reset all rate limiting counters   |
 
 ### 🔧 Folder Workflow
 
@@ -818,15 +894,72 @@ The test will:
 └── 🗂️ DOM Manipulation (6 snippets)
 ```
 
-#### **Function-Based Structure**:
+#### **🌳 Advanced Nested Structure**:
 
 ```
-📁 Database
-├── 🗂️ SQL Queries (20 snippets)
-├── 🗂️ MongoDB (12 snippets)
-├── 🗂️ Redis (5 snippets)
-└── 🗂️ Database Utils (8 snippets)
+📁 Frontend Development
+├── 📁 React Ecosystem
+│   ├── 📁 Components
+│   │   ├── 📁 UI Components
+│   │   ├── 📁 Layout Components
+│   │   └── 📁 Data Components
+│   ├── 📁 Hooks
+│   └── 📁 Utilities
+├── 📁 Styling
+│   ├── 📁 CSS
+│   ├── 📁 SCSS
+│   └── 📁 Styled Components
+└── 📁 JavaScript Utils
+    ├── 📁 Array Methods
+    ├── 📁 Date Handling
+    └── 📁 DOM Manipulation
 ```
+
+## 🔐 JWT Authentication System
+
+BlockMate Snippets includes a comprehensive local JWT (JSON Web Token) authentication system for enhanced security and session management.
+
+### 🎯 **Key Features:**
+
+- **🔐 Local Authentication**: No cloud services required - works completely offline
+- **⏰ Session Management**: 30-minute sessions with auto-refresh capability
+- **🛡️ Secure Storage**: Tokens stored securely using VS Code's built-in secure storage
+- **🔑 Machine-Specific IDs**: Unique user IDs generated based on your system
+- **📋 Permission System**: Granular read/write permissions with role-based access
+- **🔄 Token Refresh**: Automatic token renewal to maintain session continuity
+- **🔒 HMAC-SHA256**: Industry-standard signature verification for token integrity
+
+### 🚀 **Getting Started:**
+
+1. **Open JWT Dashboard**: Use `Ctrl+Shift+P` → "BlockMate: JWT Authentication Dashboard"
+2. **Initialize Authentication**: Click "Initialize Auth" to create your first session
+3. **Test Authentication**: Verify your session is working with "Test Authentication"
+4. **Manage Sessions**: Use the dashboard to refresh, logout, or force re-authentication
+
+### 📊 **Dashboard Features:**
+
+#### **Authentication Actions:**
+
+- **🔐 Initialize Auth**: Create new JWT authentication session
+- **✅ Test Authentication**: Verify current session status
+- **📋 Token Details**: View detailed token information and expiration
+- **🔄 Refresh Token**: Renew current session (extends by 30 minutes)
+
+#### **Management Actions:**
+
+- **🛡️ Test Permissions**: Check read/write permission status
+- **🔄 Force Re-Auth**: Create completely new session
+- **🔓 Logout**: End current session and clear authentication
+
+### 🛡️ **Security Benefits:**
+
+- **Session Isolation**: Each session is isolated with unique tokens
+- **Automatic Expiration**: Sessions expire after 30 minutes of inactivity
+- **Secure Storage**: Tokens stored in VS Code's encrypted storage
+- **Permission Validation**: All operations validate user permissions
+- **Token Integrity**: HMAC-SHA256 ensures token authenticity
+
+---
 
 ## ⌨️ Keyboard Shortcuts
 
@@ -836,9 +969,6 @@ The test will:
 | **Manage Snippets**      | `Ctrl+Shift+M` | `Cmd+Shift+M` | Open snippet management interface           |
 | **Insert Snippet**       | `Ctrl+Shift+I` | `Cmd+Shift+I` | Insert existing snippets                    |
 | **Quick Create Snippet** | `Ctrl+Shift+Q` | `Cmd+Shift+Q` | Fast snippet creation with folder selection |
-| **Show Version History** | `Ctrl+Shift+V` | `Cmd+Shift+V` | View snippet version history                |
-| **Compare Versions**     | `Ctrl+Shift+D` | `Cmd+Shift+D` | Compare different snippet versions          |
-| **Restore Version**      | `Ctrl+Shift+R` | `Cmd+Shift+R` | Restore previous snippet version            |
 | **Create Share Link**    | `Ctrl+Shift+L` | `Cmd+Shift+L` | Create shareable link for snippet           |
 | **Manage Share Links**   | `Ctrl+Shift+K` | `Cmd+Shift+K` | Manage all share links                      |
 
